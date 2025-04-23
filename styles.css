@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   height: 100vh;
   max-width: 80vh;
-
+  border: 5px solid blue;
 }
 
 #leaves{
@@ -38,18 +38,23 @@ body {
   justify-content: center;
   font: 1em/1.5em "Roboto", sans-serif;
   color: lightgray;
-  position: absolute;
-  bottom: 1em;
-  left: 20em;
+  position: relative;
+  bottom: 2em;
 }
 
 .formHalfContent{
   display: flex;
   flex-direction: column;
-  border:5px solid red;
+  border:5px solid green;
   text-align: left;
-  justify-content: space-around;
+  justify-content: center;
   height: 100vh;
+}
+
+.formHalfTopContainer{
+  border: 3px solid black;
+  inline-size: 29em;
+  padding-left: 1.3em;
 }
 
 form {
@@ -84,6 +89,11 @@ label {
   min-width: 90px;
   text-align: right;
 }
+
+.formHalfBottomContainer{
+  border: 5px solid blue;
+}
+
 
 input,
 textarea {
