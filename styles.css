@@ -99,6 +99,14 @@ textarea:focus {
   outline-color: #000;
 }
 
+input:valid{
+  border-color: green;
+}
+
+input:invalid{
+  border-color: red;
+}
+
 textarea {
   vertical-align: top;
   height: 5em;
