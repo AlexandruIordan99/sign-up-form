@@ -6,43 +6,70 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<form action = "/my-handling-form-=page" method = "post">
-  <fieldset>
-    <p>
-      <label for="first_name">First Name:<span aria-label="required">*</span></label>
-      <input type = "text" placeholder ="John" id = "first_name" name ="user_first_name">
-    </p>
+
+<div class="wrapper">
+
+  <div class ="imageHalf">
+    <div class="leafImage">
+    <img id="leaves" src = "./images/haliewestleaves.avif" alt="tropical leaves">
+    </div>
+    <div id="photoCredits">Photo created by Halie West on Unsplash
+    </div>
+  </div>
+
+  <div class ="formHalfContent">
+    <div class = "formHalTopContainer">
+      This is not a real online service! You know you need something like this
+      to help you achieve your burning ambitions.
+      Sign up now to get started.
+
+      You know you should.
+    </div>
+    <form action="/my-handling-form-=page" method = "post">
+    <fieldset class ="formElement">
+      <div class="formFirstColumn">
+        <p>
+          <label for="first_name">First Name:<span aria-label="required">*</span></label>
+          <input type = "text" placeholder ="John" id = "first_name" name ="user_first_name">
+        </p>
+        <p>
+          <label for="email">E-mail:<span aria-label="required">*</span></label>
+          <input type ="text" placeholder="johnjordan@gmail.com" id="email" name="user_email">
+        </p>
+        <p>
+          <label for="password">Password:<span aria-label = "required">*</span></label>
+          <input type = "text" id = "password" name="user_password">
+        </p>
+
+      </div>
+  <div class="formSecondColumn">
     <p>
       <label for="last_name">Last Name:<span aria-label="required">*</span></label>
       <input type = "text" placeholder="Jordan" id="last_name" name="user_last_name">
     </p>
-    <p>
-      <label for="email">E-mail:<span aria-label="required">*</span></label>
-      <input type ="text" placeholder="johnjordan@gmail.com" id="email" name="user_email">
-    </p>
+
     <p>
       <label for="phone_number">Phone Number:<span aria-label ="required"></span></label>
       <input type ="text" id="phone_number" name="user_phone_number">
     </p>
-    <p>
-      <label for="password">Password:<span aria-label = "required">*</span></label>
-      <input type = "text" id = "password" name="user_password">
-    </p>
+
     <p>
       <label for="confirm_password">Confirm Password:<span aria-label = "required">*</span></label>
       <input type = "text" id = "confirm_password" name="user_password_cofirmation">
     </p>
-    <p>
-      <label for="message">Message:<span aria-label ="required">*</span></label>
-      <input type = "text" id="message" name="user_message">
-    </p>
-    <p class="button">
-      <button type="submit">Send your message</button>
-    </p>
+  </div>
   </fieldset>
-
 </form>
 
+    <div class = "formHalfBottomContainer">
+      <p class="button">
+        <button type="submit">Create Account</button>
+      </p>
+      <span>Already have an account?</span>
+      <button type = "submit">Sign In</button>
+    </div>
+  </div>
+</div>
 <script src ="index.js"></script>
 </body>
 </html>
