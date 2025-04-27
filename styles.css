@@ -159,3 +159,10 @@ textarea {
 button {
   margin-left: 0.5em;
 }
+
+#createAccountButton{
+  background-color: #596D48;
+}
+
+#signUpButton{
+}
