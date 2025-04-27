@@ -4,12 +4,23 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  font-family: Arial, Times New Roman, sans-serif;
+  font-family: "Roboto",sans-serif;
 }
+
+
+html, body {
+  overflow: hidden;
+}
+
 
 @font-face {
   font-family: Norse-Bold;
   src: url("./fonts/Norse-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto-Regular.ttf") format("opentype");
 }
 .wrapper {
   display: flex;
@@ -18,6 +29,9 @@ body {
   height: 100vh;
   align-items: stretch;
   justify-content: center;
+  font-family: "Roboto",sans-serif;
+  background-color: black;
+
 }
 
 .imageHalf{
@@ -82,24 +96,42 @@ body {
   text-align: left;
   justify-content: center;
   height: 100vh;
-
+  font-family: "Roboto",sans-serif;
+  font-size: 1.2rem;
+  background-color: lightgray;
 }
 
 .formHalfTopContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   inline-size: 29em;
-  padding-left: 1.3em;
+  padding-left: 2.15em;
+  background-color: lightgray;
+  width: 100vh;
+  height: 40vh;
 }
 
 form {
-  padding: 1em;
-  border-radius: 1em;
+  display: flex;
+  border-radius: 0;
   margin: 1em;
-  justify-content: center;
-  align-content: center;
+  background-color: white;
+  height: 30vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  left: -1em;
 }
 
 .formElement{
   display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 1em;
+  flex-grow: 1;
+  width: 100%;
+  border: none;
 }
 
 .formFirstColumn,
@@ -109,6 +141,15 @@ form {
   padding: 1em;
   justify-content: flex-start;
   align-content: flex-start;
+  position: relative;
+}
+
+.input{
+  border: 1px #E5E7EB;
+}
+
+.passwordInput{
+
 }
 
 p + p {
@@ -122,8 +163,13 @@ label {
 }
 
 .formHalfBottomContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: lightgray;
+  height: 30vh;
+  font-family: Roboto, serif;
 }
-
 
 input,
 textarea {
@@ -138,6 +184,30 @@ textarea:focus {
   outline-style: solid;
   outline-color: #000;
 }
+
+
+#createAccountButton{
+  background-color: #596D48;
+  color: white;
+  position:relative;
+  left: -4.25em;
+  top: -1em;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.7rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1rem;
+  font-family: Roboto, serif;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+.accountAlready{
+  position: relative;
+  padding-left: 2em;
+}
+#signUpButton{
+}
+
 
 input:valid{
   border-color: green;
@@ -158,11 +228,4 @@ textarea {
 
 button {
   margin-left: 0.5em;
-}
-
-#createAccountButton{
-  background-color: #596D48;
-}
-
-#signUpButton{
 }
