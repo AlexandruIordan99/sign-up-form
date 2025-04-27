@@ -4,8 +4,13 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  font-family: Arial, Times New Roman, sans-serif;
 }
 
+@font-face {
+  font-family: Norse-Bold;
+  src: url("./fonts/Norse-Bold.otf") format("opentype");
+}
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -32,13 +37,34 @@ body {
   max-width: 80vh;
 }
 
-#odinLogo{
+.logoContainer{
   position: absolute;
-  top: 330px;
-  right: 160px;
-  width: 260px;
-  height:300px;
+  display: flex;
+  flex-direction: row;
+  top: 200px;
+  width: 100%;
+  height: 21%;
+  float: left;
+  color: white;
+  font-family: Norse-Bold, sans-serif;
+  opacity: 0.9;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: rgba(0,0,0,0.5)
 
+}
+#odinLogo{
+  width: 160px;
+  left: 200px;
+  height:200px;
+  float: left;
+}
+
+#odinLogoText {
+  margin-top: 120px;
+  font-size: 6rem;
+  top: 200px;
 }
 
 #photoCredits{
@@ -56,6 +82,7 @@ body {
   text-align: left;
   justify-content: center;
   height: 100vh;
+
 }
 
 .formHalfTopContainer{
