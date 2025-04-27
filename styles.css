@@ -9,27 +9,35 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   align-items: stretch;
   justify-content: center;
-  border: 5px solid red;
 }
 
 .imageHalf{
+  position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   max-width: 80vh;
-  border: 5px solid blue;
 }
 
 #leaves{
+  position: relative;
   height: 900px;
   width: 600px;
   object-fit: fill;
   min-height:100vh;
   max-width: 80vh;
+}
+
+#odinLogo{
+  position: absolute;
+  top: 330px;
+  right: 160px;
+  width: 260px;
+  height:300px;
 
 }
 
@@ -45,14 +53,12 @@ body {
 .formHalfContent{
   display: flex;
   flex-direction: column;
-  border:5px solid green;
   text-align: left;
   justify-content: center;
   height: 100vh;
 }
 
 .formHalfTopContainer{
-  border: 3px solid black;
   inline-size: 29em;
   padding-left: 1.3em;
 }
@@ -62,12 +68,10 @@ form {
   border-radius: 1em;
   margin: 1em;
   justify-content: center;
-  border: 5px solid green;
   align-content: center;
 }
 
 .formElement{
-  border: 5px solid blueviolet;
   display: flex;
 }
 
@@ -91,7 +95,6 @@ label {
 }
 
 .formHalfBottomContainer{
-  border: 5px solid blue;
 }
 
 
